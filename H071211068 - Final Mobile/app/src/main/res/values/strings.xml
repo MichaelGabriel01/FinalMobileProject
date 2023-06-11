@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Movie Player</string>
+    <string name="movie">Movies</string>
+    <string name="tvshow">TV Shows</string>
+    <string name="fav">Favorites</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">title</string>
 </resources>

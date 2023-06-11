@@ -1,21 +1,17 @@
-package com.example.movieplayer.Model.Movie;
+package com.example.movieplayer.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-
-import javax.xml.transform.Result;
-
-public class Response {
-
+public class TvResponse {
     @SerializedName("page")
     @Expose
     private Integer page;
     @SerializedName("results")
     @Expose
-    private List<Result> results;
+    private List<TvResult> results;
     @SerializedName("total_pages")
     @Expose
     private Integer totalPages;
@@ -31,11 +27,11 @@ public class Response {
         this.page = page;
     }
 
-    public List<Result> getResults() {
+    public List<TvResult> getResults() {
         return results;
     }
 
-    public void setResults(List<Result> results) {
+    public void setResults(List<TvResult> results) {
         this.results = results;
     }
 
@@ -54,5 +50,4 @@ public class Response {
     public void setTotalResults(Integer totalResults) {
         this.totalResults = totalResults;
     }
-
 }
