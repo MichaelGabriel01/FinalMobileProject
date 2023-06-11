@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity"
+    android:background="@drawable/gradient">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#0F1923"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/moviebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tvshowbtn"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/baseline_movie_24" />
+
+        <TextView
+            android:id="@+id/textmovie"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moviebtn"
+            android:layout_alignStart="@+id/moviebtn"
+            android:layout_alignEnd="@+id/moviebtn"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-23dp"
+            android:text="@string/movie"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tvshowbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/baseline_tv_24" />
+
+        <TextView
+            android:id="@+id/texttvshow"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvshowbtn"
+            android:layout_alignStart="@+id/tvshowbtn"
+            android:layout_alignEnd="@+id/tvshowbtn"
+            android:layout_marginStart="-14dp"
+            android:layout_marginEnd="-18dp"
+            android:text="@string/tvshow"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/favbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tvshowbtn"
+            android:layout_marginStart="100dp" />
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textfav"
+            android:layout_below="@+id/favbtn"
+            android:layout_alignStart="@+id/favbtn"
+            android:layout_alignEnd="@+id/favbtn"
+            android:layout_marginStart="-14dp"
+            android:layout_marginEnd="-18dp"
+            android:text="@string/fav"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

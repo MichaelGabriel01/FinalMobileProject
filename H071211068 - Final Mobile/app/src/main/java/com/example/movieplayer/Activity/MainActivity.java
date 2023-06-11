@@ -1,8 +1,11 @@
 package com.example.movieplayer.Activity;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.movieplayer.R;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +13,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+
+        movie = findViewById(R.id.moviebtn);
+        tvshow = findViewById(R.id.tvshowbtn);
+        fav = findViewById(R.id.favbtn);
 }
