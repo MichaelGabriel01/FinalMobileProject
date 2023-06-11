@@ -55,7 +55,7 @@
                 app:layout_constraintTop_toBottomOf="@id/moviecardpost" />
 
             <TextView
-                android:id="@+id/movie_year"
+                android:id="@+id/movieyear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
